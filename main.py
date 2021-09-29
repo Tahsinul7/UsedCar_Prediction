@@ -63,7 +63,7 @@ mpg = st.slider('', min_value=df.mpg.min(), max_value=df.mpg.max(), value=250.0)
 st.subheader('Slide to choose the road tax')
 tax = st.slider('', min_value=df.tax.min(), max_value=df.tax.max(), value=180.0)
 st.subheader('Pick the engineSize')
-engineSize= st.slider('',min_value=df.engineSize.min(), max_value=df.engineSize.max(), value=3.5)
+engineSize= st.slider('',min_value=df.engineSize.min(), max_value=df.engineSize.max(), value=3)
 
 #Instantiating and appending new data for prediction.
 inference_data =[]
