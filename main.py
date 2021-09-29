@@ -57,13 +57,13 @@ transmission = st.selectbox('',df.transmission.unique())
 st.subheader('Pick the kind of fuel')
 fuelType = st.radio('',df.fuelType.unique())
 st.subheader('Slide to pick the mileage of the car')
-mileage = st.slider('',min_value=df.mileage.min(), max_value=df.mileage.max(), value=150000)
+mileage = st.slider('',min_value= int(df.mileage.min()), max_value= int(df.mileage.max()), value=150000)
 st.subheader('Slide to choose the mpg')
-mpg = st.slider('', min_value=df.mpg.min(), max_value=df.mpg.max(), value=250.0)
+mpg = st.slider('', min_value= int(df.mpg.min()), max_value= int(df.mpg.max()), value=250)
 st.subheader('Slide to choose the road tax')
-tax = st.slider('', min_value=df.tax.min(), max_value=df.tax.max(), value=180.0)
+tax = st.slider('', min_value= int(df.tax.min()), max_value= int(df.tax.max()), value=180)
 st.subheader('Pick the engineSize')
-engineSize= st.slider('',min_value=df.engineSize.min(), max_value=df.engineSize.max(), value=3)
+engineSize= st.slider('',min_value= int(df.engineSize.min()), max_value= int(df.engineSize.max()), value=3)
 
 #Instantiating and appending new data for prediction.
 inference_data =[]
